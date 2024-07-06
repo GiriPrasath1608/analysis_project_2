@@ -5,9 +5,9 @@ import pprint
 import pandas as pd
 import mysql.connector 
 import plotly.express as px
-import function
-import mapfunction
-import chart
+from pages import function
+from pages import mapfunction
+from pages import chart
 
 st.set_page_config(
     page_title = "Phone Pe Project Dashboard", 
