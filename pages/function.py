@@ -4,7 +4,7 @@ import pandas as pd
 import mysql.connector 
 import plotly.express as px
 import streamlit as st
-import mapfunction
+from pages import mapfunction
 
 #____________MYSQL CONNECTION_________________________
 

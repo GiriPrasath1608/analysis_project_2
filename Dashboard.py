@@ -28,7 +28,7 @@ def on_click_second_button():
     st.session_state.second_button_clicked = True
 
 st.title("Dashboard")
-tab1, tab2 = st.tabs(["Nation","State"])
+tab1, tab2,tab3 = st.tabs(["Nation","State","Analysis"])
 # this tab for country
 with tab1:
     
@@ -233,4 +233,65 @@ with tab2:
             fig = chart.one_state_year_user_chart(state,year_)
             st.plotly_chart(fig, use_container_width= True)
 
+with tab3:
+    with st.expander("Yearly Growth"):
+        st.text("""
+                From 2019 to 2022, there is a marked increase in both the number of transactions and the total value, 
+                showcasing the adoption of digital payments over traditional methods.
+                """)
+    with st.expander("Monthly Trends"):
+        st.text("""
+                Observing the monthly data, 
+                we can see consistent growth with occasional spikes during festival seasons such as Diwali and New Year. 
+                This seasonal variation highlights consumer spending patterns.
+                """)
+
+    with st.expander("Top States"):
+        st.text("""
+                Maharashtra shows the highest number of transactions, closely followed by Karnataka and Tamil Nadu. 
+                This can be attributed to the high urban population and better internet penetration in these states.                    
+                """)
+    with st.expander("Growth in Tier-2 Cities"):
+        st.text("""
+                There is also notable growth in Tier-2 cities such as Jaipur, Indore, and Coimbatore, 
+                indicating the spread of digital payment infrastructure beyond metro cities.
+                """)
+    with st.expander("Festive Season Impact"):
+        st.text("""
+                Analysis of quarterly data reveals that Q3 and Q4 generally see higher transaction volumes. 
+                This is likely due to festivals like Diwali and Christmas, where consumer spending is higher.
+                """)
+    with st.expander("Urban vs Rural"):
+        st.text("""
+                Urban districts such as Mumbai, Bangalore Urban, and Chennai lead in transaction volumes. 
+                In contrast, rural districts, although showing growth, still lag behind in absolute numbers.
+                """)
+    with st.expander("Emerging Districts"):
+        st.text("""
+                Districts like Pune and Gurugram show substantial growth, 
+                indicating emerging urban centers adopting digital payments rapidly.
+                """)
+    with st.expander("UPI vs Other Methods"):
+        st.text("""
+                UPI transactions account for the majority of digital payments, 
+                surpassing traditional card and net banking methods. 
+                This is due to the instant and secure nature of UPI payments.
+                """)
+    with st.expander("Urban Dominance"):
+        st.text("""
+                Urban areas dominate in transaction volumes, 
+                but rural areas are catching up with increasing internet penetration and digital literacy.
+                """)
+    with st.expander("Regional Variations"):
+        st.text("""
+                Southern states like Karnataka and Tamil Nadu show higher digital transaction volumes 
+                compared to northern states, reflecting regional economic disparities.
+                """)
+    with st.expander("Economic Benefits"):
+        st.text("""
+                Benefits include increased transparency, 
+                Reduced corruption, 
+                And improved tax collection, 
+                Contributing to overall economic health.
+                """)
         

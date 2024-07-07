@@ -1,8 +1,8 @@
 import pandas as pd
 import mysql.connector 
 import plotly.express as px
-import function
-import mapfunction
+from pages import function
+from pages import mapfunction
 
 #__________________________transaction category pie chart_____________
 def category_piechart(year,quater):
