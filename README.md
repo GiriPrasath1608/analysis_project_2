@@ -1,3 +1,7 @@
+Refer the images of project application
+
+open Dashboard.py (run this code "streamlit run Dashboard.py")
+
 Project Title:
 
   Phonepe Pulse Data Visualization and Exploration. A User-Friendly Tool Using Streamlit and Plotly
@@ -78,3 +82,6 @@ Results:
   Overall, the result of this project will be a comprehensive and user-friendly solution
   for extracting, transforming, and visualizing data from the Phonepe pulse Github
   repository.
+
+  
+  
